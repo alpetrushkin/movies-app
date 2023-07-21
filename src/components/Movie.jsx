@@ -4,7 +4,11 @@ const Movie = ({ Poster, Title, Type, Year }) => {
 	return (
 		<div className='movie'>
 			<div className='movie-img'>
-				<img className='img' src={Poster} />
+				{Poster === 'N/A' ? (
+					<img src={`https://placehold.co/310x400?text=${Title}`} alt={Title} />
+				) : (
+					<img className='img' src={Poster} alt={Title} />
+				)}
 			</div>
 			<div className='movie-bottom'>
 				<span className='movie-title'>{Title}</span>
