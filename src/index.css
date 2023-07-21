@@ -1,0 +1,44 @@
+.container {
+	margin: 0 auto;
+	width: 1430px;
+}
+
+nav {
+	padding: 0 15px;
+}
+
+.main {
+	padding: 40px 0;
+	margin-top: auto;
+	display: grid;
+	gap: 10px;
+	grid-template-columns: repeat(4, 1fr);
+	min-height: calc(100vh - 64px - 70px);
+}
+
+.movies {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 1rem;
+	padding: 40px 10px;
+}
+
+.movie {
+	box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.3);
+}
+
+.img {
+	width: 100%;
+	object-fit: cover;
+	height: 400px;
+}
+
+.movie-bottom {
+	opacity: 0.8;
+	padding: 20px 15px;
+}
+
+.subtitle-item {
+	display: flex;
+	justify-content: space-between;
+}
